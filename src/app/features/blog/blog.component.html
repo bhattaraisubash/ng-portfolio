@@ -1,8 +1,8 @@
-<section class="blog-section container">
+<section class="blog-section container" *ngIf="(dataService.siteInfo$ | async) as siteInfo">
 	<div class="blog-intro">
 		<h2>Read My Blogs</h2>
 		<p>Explore my latest thoughts and insights on technology, coding, and software development.</p>
-		<button mat-button color="primary" [routerLink]="['/blogs']">View All</button>
+		<button mat-button color="primary" (click)="navigateToBlog()">View All</button>
 	</div>
 
 	<div class="blog-card-list">

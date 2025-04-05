@@ -1,4 +1,4 @@
-import { NgFor } from '@angular/common';
+import { CommonModule, NgFor, NgIf } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 import { MatCardModule } from '@angular/material/card';
 import { RouterModule } from '@angular/router';
@@ -9,16 +9,24 @@ import { DataService } from '../../services/data.service';
   selector: 'app-blog',
   templateUrl: './blog.component.html',
   styleUrls: ['./blog.component.scss'],
-  imports: [RouterModule, NgFor, MatCardModule]
+  imports: [RouterModule, NgFor, MatCardModule, NgIf, CommonModule]
 })
 export class BlogComponent implements OnInit {
   blogs: Blog[] = [];
 
-  constructor(private dataService: DataService) { }
+  constructor(public dataService: DataService) { }
 
   ngOnInit(): void {
     this.dataService.getBlogPosts().subscribe((data: Blog[]) => {
       this.blogs = data;
+    });
+  }
+
+  navigateToBlog() {
+    this.dataService.siteInfo$.subscribe(siteInfo => {
+      if (siteInfo && siteInfo.blog) {
+        window.open(siteInfo.blog, '_blank');
+      }
     });
   }
 }
