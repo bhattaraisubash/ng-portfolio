@@ -1,0 +1,210 @@
+.experience-container {
+	display: flex;
+	gap: 40px;
+	align-items: stretch;
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 80px 20px;
+
+	.experience-left {
+		flex: 1;
+		background: linear-gradient(135deg, var(--mat-sys-primary), var(--mat-sys-surface));
+		border-radius: 12px;
+		padding: 40px;
+		display: flex;
+		flex-direction: column;
+		box-shadow: var(--mat-sys-elevation-1);
+		min-height: 100%;
+		width: 100%;
+		max-width: 35%;
+
+		.education-card {
+			text-align: center;
+			width: 100%;
+
+			.education-item {
+				background: var(--mat-sys-surface);
+				padding: 18px;
+				border-radius: 10px;
+				box-shadow: var(--mat-sys-elevation-1);
+				margin-bottom: 16px;
+				transition: transform 0.3s ease, box-shadow 0.3s ease;
+			
+				&:hover {
+					transform: translateY(-3px);
+					box-shadow: var(--mat-sys-elevation-2);
+				}
+			
+				.degree {
+					font-size: 1.2rem;
+					font-weight: 600;
+					color: var(--mat-sys-primary);
+					margin-bottom: 4px;
+				}
+			
+				.rank {
+					font-size: 0.9rem;
+					color: var(--mat-sys-secondary);
+					font-style: italic;
+					margin-bottom: 6px;
+				}
+			
+				.university {
+					font-size: 0.9rem;
+					color: var(--mat-sys-on-surface);
+					margin-bottom: 10px;
+				}
+			}
+			
+		}
+	}
+
+	.experience-right {
+		flex: 2;
+		max-width: 60%;
+		display: flex;
+		flex-direction: column;
+
+		h2 {
+			font-size: 2.5rem;
+			margin-bottom: 2rem;
+			color: var(--mat-sys-primary);
+			letter-spacing: -0.5px;
+			font-weight: 700;
+		}
+
+		.experience-list {
+			display: flex;
+			flex-direction: column;
+			gap: 20px;
+
+			.experience-item {
+				background-color: var(--mat-sys-surface);
+				padding: 20px;
+				border-radius: 10px;
+				box-shadow: var(--mat-sys-elevation-1);
+				transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+				&:hover {
+					transform: translateY(-5px);
+					box-shadow: var(--mat-sys-elevation-2);
+				}
+
+				.experience-header {
+					cursor: pointer;
+
+					.title{
+						display: flex;
+						justify-content: space-between;
+						align-items: center;
+					}
+
+					.meta {
+						font-size: 0.9rem;
+						color: var(--mat-sys-secondary);
+						display: flex;
+						align-items: center;
+						justify-content: flex-start;
+						gap: 8px;
+						line-height: 1.5;
+
+						mat-icon {
+							font-size: 1rem;
+							color: var(--mat-sys-primary);
+							display: inline-flex;
+							align-items: center;
+						}
+					}
+			
+					h4 {
+						font-size: 1.3rem;
+						font-weight: 600;
+						color: var(--mat-sys-primary);
+						margin: 0;
+					}
+			
+					.toggle-icon {
+						font-size: 1.5rem;
+						color: var(--mat-sys-primary);
+					}
+				}
+
+				.experience-details {
+					animation: fadeIn 0.3s ease-in-out;
+					padding-bottom: 10px;
+
+					p{
+						line-height: 1.5;
+						font-size: .9rem;
+					}
+
+					.skills-buttons {
+						display: flex;
+						gap: 10px;
+	
+						button {
+							background-color: var(--mat-sys-primary);
+							color: var(--mat-sys-on-primary);
+							border-radius: 6px;
+							padding: 8px 12px;
+							font-size: 0.9rem;
+							font-weight: 500;
+							transition: background-color 0.3s ease, transform 0.2s ease;
+							border: none;
+							outline: none;
+							box-shadow: none;
+							&:hover {
+								background-color: var(--mat-sys-secondary);
+								transform: scale(1.05);
+							}
+						}
+					}
+				}
+				
+			}
+			@keyframes fadeIn {
+				from { opacity: 0; transform: translateY(-5px); }
+				to { opacity: 1; transform: translateY(0); }
+			}
+		}
+	}
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+	.experience-container {
+		flex-direction: column;
+		padding: 40px 20px;
+		margin: 0 20px;
+		gap: 20px;
+
+		h2 {
+			font-size: 2rem;
+			text-align: center;
+		}
+
+		.experience-left {
+			max-width: 100%;
+			width: 100%;
+			margin-bottom: 20px;
+			padding: 30px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			box-sizing: border-box;
+
+			.education-card {
+				width: 100%;
+			}
+		}
+
+		.experience-right {
+			max-width: 100%;
+			width: 100%;
+		}
+
+		.experience-item {
+			padding: 18px;
+		}
+	}
+}

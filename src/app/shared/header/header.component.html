@@ -1,0 +1,10 @@
+<header class="header" *ngIf="(dataService.siteInfo$ | async) as siteInfo">
+  	<div class="logo">{{siteInfo.name}}</div>
+	<nav class="nav-links">
+		<a (click)="scrollTo('home')">Home</a>
+		<a (click)="scrollTo('about')">About</a>
+		<a (click)="scrollTo('projects')">Projects</a>
+		<a (click)="scrollTo('blog')">Blog</a>
+		<a href="mailto:{{siteInfo.email}}">Contact</a>
+	</nav>
+</header>

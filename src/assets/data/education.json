@@ -1,0 +1,30 @@
+[
+    {
+      "degree": "MSc Computer Science",
+      "rank": "Merit",
+	  "level": "Master's",
+      "university": "York St. John University",
+      "completionYear": "2024",
+      "modules": [
+        { "name": "AI" },
+        { "name": "ML" },
+		{ "name": "IoT" },
+        { "name": "Big Data" },
+		{ "name": "Agile" },
+		{ "name": "Cyber Security" },
+		{ "name": "Cloud Computing" },
+		{ "name": "User Centric Design" }
+      ]
+    },
+    {
+      "degree": "Computer Engineering",
+      "rank": "1st Division",
+	  "level": "Bachelor's",
+      "university": "Tribhuvan University",
+      "completionYear": "2022",
+      "modules": [
+        
+      ]
+    }
+  ]
+  

@@ -1,0 +1,130 @@
+.blog-section {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 4rem 1rem;
+	display: grid;
+	grid-template-columns: 1fr 2fr;
+	gap: 3rem;
+	align-items: stretch; // Matches height
+	min-height: 400px;
+
+	@media (max-width: 768px) {
+		grid-template-columns: 1fr;
+		text-align: center;
+		margin: 0 20px;
+	}
+}
+
+.blog-intro {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	padding: 3rem;
+	border-radius: 12px;
+	background: linear-gradient(135deg, var(--mat-sys-primary) 20%, var(--mat-sys-surface) 100%);
+	color: var(--mat-sys-on-primary);
+	box-shadow: var(--mat-sys-elevation-2);
+
+	h2 {
+		font-size: 4em;
+		font-weight: 700;
+		margin-bottom: 10px;
+		letter-spacing: -1px;
+	}
+
+	p {
+		font-size: 1.3em;
+		line-height: 1.6;
+		opacity: 0.9;
+		margin-bottom: 2rem;
+	}
+
+	button {
+		padding: 1rem 2rem;
+		font-size: 1.2em;
+		font-weight: bold;
+		background-color: var(--mat-sys-on-primary);
+		color: var(--mat-sys-primary);
+		border: none;
+		border-radius: 6px;
+		cursor: pointer;
+		transition: background-color 0.3s, transform 0.2s ease-in-out;
+
+		&:hover {
+			background-color: var(--mat-sys-secondary);
+			color: var(--mat-sys-on-secondary);
+			transform: scale(1.05);
+		}
+	}
+}
+  
+  .blog-card-list {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 1.5rem;
+
+	@media (max-width: 768px) {
+		grid-template-columns: 1fr; // Show one per row on mobile
+	}
+
+	.blog-item {
+		display: flex;
+		flex-direction: column;
+		background-color: var(--mat-sys-surface);
+		box-shadow: var(--mat-sys-elevation-2);
+		border-radius: 8px;
+		overflow: hidden;
+		transition: box-shadow 0.3s ease, transform 0.3s ease;
+		cursor: pointer;
+		text-decoration: none;
+
+		&:hover {
+			box-shadow: var(--mat-sys-elevation-4);
+			transform: translateY(-5px);
+		}
+
+		.blog-thumbnail {
+			width: 100%;
+			height: 180px;
+			background-size: cover;
+			background-position: center;
+		}
+
+		.blog-content {
+			padding: 1rem;
+			gap: 0.5rem;
+
+			h3 {
+				font-size: var(--mat-sys-typescale-title-medium);
+				font-weight: bold;
+				margin: 0;
+			}
+
+			p {
+				color: var(--mat-sys-color-on-surface-variant);
+				font-size: var(--mat-sys-typescale-body-medium);
+				line-height: 1.5;
+			}
+
+			.blog-button {
+				padding: 0.75rem 1.5rem;
+				background: var(--mat-sys-primary);
+				color: var(--mat-sys-on-primary);
+				border-radius: 6px;
+				text-decoration: none;
+				font-weight: 500;
+				transition: background 0.3s ease, transform 0.2s ease;
+	
+				&:hover {
+					background: var(--mat-sys-secondary);
+					transform: scale(1.05);
+				}
+			}
+		}
+		
+	}
+}
+
+  

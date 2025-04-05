@@ -1,0 +1,30 @@
+[
+    {
+        "id": 1,
+        "title": "Addition Of Polynomials Using Linked List",
+        "description": "Given two polynomials, represented by a linked list, write a function to add these polynomials and set the result to new polynomial represented by a linked list. Adding polynomials means...",
+        "imageUrl": "assets/images/polynomial.png",
+        "link": "https://blog.subashbhattarai.com/addition-of-polynomials-using-linked-list/"
+    },
+    {
+        "id": 2,
+        "title": "Deep Learning: Neural Net From Scratch Using Java",
+        "description": "Neural Network is the computational design that mimics human learning process and figures out the values of weight and bias associated with data input processing on known datasets and outputs...",
+        "imageUrl": "https://blog.subashbhattarai.com/wp-content/uploads/2020/06/neural_net_from_scratch_java.jpg",
+        "link": "https://blog.subashbhattarai.com/deep-learning-neural-net-from-scratch-using-java/"
+    },
+    {
+        "id": 3,
+        "title": "Factory Method Design Pattern: Java, C#",
+        "description": "Factory method is a design pattern used to create objects using common interface hiding the internal creation logic. Factory method design pattern a creational design pattern which uses interfaces and...",
+        "imageUrl": "https://blog.subashbhattarai.com/wp-content/uploads/2022/10/factory_method_design_pattern.jpg",
+        "link": "https://blog.subashbhattarai.com/factory-method-design-pattern-java-c/"
+    },
+    {
+        "id": 4,
+        "title": "Understanding Transformer Models: The Key to Improving AI Language Processing",
+        "description": "Artificial intelligence (AI) has come a long way in recent years, and one of the most exciting developments has been in the area of natural language processing (NLP). NLP is...",
+        "imageUrl": "https://blog.subashbhattarai.com/wp-content/uploads/2023/01/understanding_transformer_model.jpg",
+        "link": "https://blog.subashbhattarai.com/understanding-transformer-models-the-key-to-improving-ai-language-processing/"
+    }
+]

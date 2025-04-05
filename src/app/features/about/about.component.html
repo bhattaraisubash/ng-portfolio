@@ -1,0 +1,48 @@
+<div class="experience-container">
+	<div class="experience-left">
+		<div class="education-card">
+			<div class="education-item" *ngFor="let education of educationItems">
+				<h4 class="degree">{{ education.degree }}</h4>
+				<p class="rank">{{education.level}} degree | {{ education.rank }}</p>
+				<p class="university">{{ education.university }} ({{ education.completionYear }})</p>
+				<mat-chip-set>
+					<mat-chip *ngFor="let module of education.modules" color="primary">
+					  {{ module.name }}
+					</mat-chip>
+				</mat-chip-set>
+			</div>
+		</div>
+	</div>
+  
+	<div class="experience-right">
+	  <h2>EXPERIENCE</h2>
+	  <div class="experience-list">
+		<div class="experience-item" 
+			*ngFor="let experience of experienceItems; let i = index"
+			[ngClass]="{ 'active': selectedItem === i }">
+		  <div class="experience-header" (click)="toggleItem(i)">
+			<div class="title">
+				<h4>{{ experience.company }} | {{ experience.position }}</h4>
+				<span class="toggle-icon">
+				<mat-icon>{{ selectedItem === i ? 'expand_less' : 'expand_more' }}</mat-icon>
+				</span>
+			</div>
+
+			<p class="meta">
+				<mat-icon>schedule</mat-icon> {{ experience.duration }} | 
+				<mat-icon>work</mat-icon> {{ experience.type }} | 
+				<mat-icon>location_on</mat-icon> {{ experience.location }}
+			</p>
+		  </div>
+		  
+		  <div class="experience-details" *ngIf="selectedItem === i">
+			<p>{{ experience.description }}</p>
+			<div class="skills-buttons">
+			  <button *ngFor="let skill of experience.skills">{{ skill }}</button>
+			</div>
+		  </div>
+		</div>
+	  </div>
+	</div>
+</div>
+  

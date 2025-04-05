@@ -1,0 +1,20 @@
+<section class="blog-section container">
+	<div class="blog-intro">
+		<h2>Read My Blogs</h2>
+		<p>Explore my latest thoughts and insights on technology, coding, and software development.</p>
+		<button mat-button color="primary" [routerLink]="['/blogs']">View All</button>
+	</div>
+
+	<div class="blog-card-list">
+		<div *ngFor="let blog of blogs" class="blog-item">
+			<div class="blog-thumbnail" [style.background-image]="'url(' + blog.imageUrl + ')'" aria-label="Blog thumbnail"></div>
+			<div class="blog-content">
+				<h3>{{ blog.title }}</h3>
+				<p>{{ blog.description }}</p>
+
+				<a [href]="blog.link" target="_blank" class="blog-button">Read More</a>
+			</div>
+			
+		</div>
+	</div>
+</section>

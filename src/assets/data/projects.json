@@ -1,0 +1,24 @@
+[
+    {
+      "title": "Entrance Capsule",
+      "description": "An android application for engineering entrance exam preparation.",
+	  "link": "https://play.google.com/store/apps/details?id=np.com.bsubash.entrancecapsule",
+	  "imageUrl": "assets/images/entrancecapsule.png",
+	  "technologies": ["Flutter", "Dart", "Android", "Firebase", "Laravel"]
+	},
+	{
+		"title": "Stocker",
+		"description": "A stock management and billing system for small and medium-sized businesses.",
+		"link": "https://billing.agromartnepal.com",
+		"imageUrl": "assets/images/stocker.png",
+		"technologies": ["Laravel", "PHP", "MySQL", "Bootstrap", "jQuery"]
+	},
+	{
+		"title": "Campus Routine Generator",
+		"description": "Implementation of genetic algorithm from scratch to generate multi-department campus routine.",
+		"link": "https://github.com/bhattaraisubash/campus-routine-generator.git",
+		"imageUrl": "assets/images/campus-routine-generator.png",
+		"technologies": ["Java", "Spring Boot", "HTML", "CSS", "JavaScript", "PHP"]
+	}
+]
+  

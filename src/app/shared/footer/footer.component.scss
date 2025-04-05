@@ -1,0 +1,99 @@
+.footer {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 3rem 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid var(--mat-sys-outline-variant);
+    color: var(--mat-sys-on-surface);
+    font-size: 1rem;
+
+    @media (max-width: 768px) {
+        flex-direction: column;
+        text-align: center;
+        gap: 1.5rem;
+        margin: 0 20px;
+    }
+
+    .footer-left {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+
+        @media screen and (max-width: 768px) {
+            align-items: center;        
+        }
+
+        p {
+            margin: 0;
+            color: var(--mat-sys-on-surface-variant);
+            font-size: 0.95rem;
+            line-height: 1.5;
+            mat-icon{
+                color: var(--mat-sys-error);
+                vertical-align: middle;
+                transition: color 0.3s ease;
+                &:hover {
+                    color: var(--mat-sys-error-container);
+                }
+            }
+        }
+
+        a{
+            text-decoration: none;
+            color: var(--mat-sys-primary);
+            font-weight: 500;
+            transition: color 0.3s ease;
+
+            &:hover {
+                color: var(--mat-sys-secondary);
+            }
+        }
+
+        .social-links {
+            display: flex;
+            gap: 1rem;
+
+            a {
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                width: 36px;
+                height: 36px;
+                border-radius: 50%;
+                background: var(--mat-sys-surface-container);
+                color: var(--mat-sys-primary);
+                font-size: 1.2rem;
+                transition: background 0.2s ease, transform 0.2s ease;
+
+                &:hover {
+                    background: var(--mat-sys-primary);
+                    color: var(--mat-sys-on-primary);
+                    transform: scale(1.1);
+                }
+            }
+        }
+    }
+
+    .footer-right {
+        display: flex;
+        gap: 1.5rem;
+
+        @media (max-width: 768px) {
+            flex-direction: row;
+            align-items: center;
+        }
+
+        a {
+            text-decoration: none;
+            color: var(--mat-sys-primary);
+            font-weight: 500;
+            transition: color 0.3s ease;
+
+            &:hover {
+                color: var(--mat-sys-secondary);
+            }
+        }
+    }
+}
