@@ -28,17 +28,25 @@
 	box-shadow: var(--mat-sys-elevation-2);
 
 	h2 {
-		font-size: 4em;
+		font-size: 4rem;
 		font-weight: 700;
 		margin-bottom: 10px;
 		letter-spacing: -1px;
+
+		@media (max-width: 768px) {
+			font-size: 2rem;
+		}
 	}
 
 	p {
-		font-size: 1.3em;
+		font-size: 1.3rem;
 		line-height: 1.6;
 		opacity: 0.9;
 		margin-bottom: 2rem;
+
+		@media (max-width: 768px) {
+			font-size: 1rem;
+		}
 	}
 
 	button {
@@ -56,6 +64,11 @@
 			background-color: var(--mat-sys-secondary);
 			color: var(--mat-sys-on-secondary);
 			transform: scale(1.05);
+		}
+
+		@media (max-width: 768px) {
+			font-size: 1rem;
+			padding: 0.8rem 1.5rem;
 		}
 	}
 }
