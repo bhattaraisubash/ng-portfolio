@@ -41,8 +41,9 @@
 	  }
   
 	  p {
-		font-size: 1.5rem;
+		font-size: 1.2rem;
 		margin-bottom: 2rem;
+		line-height: 1.5;
 		color: var(--mat-sys-secondary);
   
 		@media (max-width: 768px) {
@@ -54,10 +55,11 @@
 	  .social-links {
 		display: flex;
 		gap: 1rem;
-		justify-content: center;
+		justify-content: start;
   
 		@media (max-width: 768px) {
 		  gap: 0.8rem;
+		  justify-content: center;
 		}
   
 		.social-icon {
