@@ -12,15 +12,23 @@ import { DataService } from '../../services/data.service';
   styleUrl: './header.component.scss'
 })
 export class HeaderComponent {
+	menuOpen = false;
+
 	constructor(public dataService: DataService) { }
 
     scrollTo(sectionId: string) {
         const section = document.getElementById(sectionId);
         const offset = 80;
         if (section) {
-          const elementPosition = section.getBoundingClientRect().top + window.scrollY;
-          window.scrollTo({ top: elementPosition - offset, behavior: 'smooth' });
+			const elementPosition = section.getBoundingClientRect().top + window.scrollY;
+			window.scrollTo({ top: elementPosition - offset, behavior: 'smooth' });
+
+			this.menuOpen = false;
         }
     }
+
+	toggleMenu() {
+		this.menuOpen = !this.menuOpen;
+	}
 
 }

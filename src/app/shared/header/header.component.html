@@ -1,6 +1,12 @@
 <header class="header" *ngIf="(dataService.siteInfo$ | async) as siteInfo">
   	<div class="logo">{{siteInfo.name}}</div>
-	<nav class="nav-links">
+	  <button class="hamburger" (click)="toggleMenu()" aria-label="Toggle menu">
+		&#9776;
+	  </button>
+	<nav class="nav-links" [ngClass]="{ 'open': menuOpen }">
+		<button class="close-btn" (click)="toggleMenu()" aria-label="Close menu">
+			&#10005;
+		</button>
 		<a (click)="scrollTo('home')">Home</a>
 		<a (click)="scrollTo('about')">About</a>
 		<a (click)="scrollTo('projects')">Projects</a>
