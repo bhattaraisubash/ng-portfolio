@@ -1,0 +1,46 @@
+name: Deploy NG Portfolio to GitHub Pages
+
+on:
+  push:
+    branches:
+      - master
+
+permissions:
+  contents: write
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Checkout the code
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      # Set up Node.js
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '22.14.0'
+
+      # Install dependencies
+      - name: Install dependencies
+        run: |
+          npm install
+
+      # Install Angular CLI globally
+      - name: Install Angular CLI
+        run: |
+          npm install -g @angular/cli
+
+      # Build the Angular project for production
+      - name: Build Angular app
+        run: |
+          ng build --configuration=production --base-href "https://bhattaraisubash.github.io/ng-portfolio/"
+
+      # Deploy to GitHub Pages (use angular-cli-ghpages for deployment)
+      - name: Deploy to GitHub Pages
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          branch: gh-pages           # The branch where the app will be deployed
+          folder: dist/ng-portfolio/browser  # Path to the build directory
