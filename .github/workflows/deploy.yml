@@ -9,7 +9,8 @@ permissions:
   contents: write
 
 jobs:
-  deploy:
+  build-and-deploy-gh-pages:
+    name: Build and Deploy to GitHub Pages
     runs-on: ubuntu-latest
 
     steps:
@@ -44,3 +45,23 @@ jobs:
         with:
           branch: gh-pages           # The branch where the app will be deployed
           folder: dist/ng-portfolio/browser  # Path to the build directory
+  
+  mirror-to-hostinger:
+    name: Mirror gh-pages to subashbhattarai.com via FTP
+    runs-on: ubuntu-latest
+    needs: build-and-deploy-gh-pages
+
+    steps:
+      - name: Checkout gh-pages branch
+        uses: actions/checkout@v3
+        with:
+          ref: gh-pages
+
+      - name: FTP Deploy to public_html
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.4
+        with:
+          server: ${{ secrets.FTP_SERVER }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          local-dir: ./  # This is the root of gh-pages content
+          server-dir: /domains/subashbhattarai.com/public_html/  # This is the path to your public_html directory
