@@ -18,64 +18,87 @@
 	  @media (max-width: 768px) {
 		flex-direction: column;
 		text-align: center;
+		gap: 2rem;
 	  }
 	}
   
 	.hero-content {
 	  max-width: 600px;
-		h1 {
-			font-size: 3rem;
-			font-weight: bold;
-			margin-bottom: 1.5rem;
+  
+	  h1 {
+		font-size: 3rem;
+		font-weight: bold;
+		margin-bottom: 1.5rem;
+  
+		@media (max-width: 768px) {
+		  font-size: 2.2rem;
+		  margin-bottom: 1rem;
 		}
-	
-		.highlight {
-			color: var(--mat-sys-primary);
+	  }
+  
+	  .highlight {
+		color: var(--mat-sys-primary);
+	  }
+  
+	  p {
+		font-size: 1.2rem;
+		margin-bottom: 2rem;
+		line-height: 1.5;
+		color: var(--mat-sys-secondary);
+  
+		@media (max-width: 768px) {
+		  font-size: 1.2rem;
+		  margin-bottom: 1.5rem;
 		}
-	
-		p {
-			font-size: 1.5rem;
-			margin-bottom: 2rem;
-			color: var(--mat-sys-secondary);
+	  }
+  
+	  .social-links {
+		display: flex;
+		gap: 1rem;
+		justify-content: start;
+  
+		@media (max-width: 768px) {
+		  gap: 0.8rem;
+		  justify-content: center;
 		}
-	
-		.social-links {
-			display: flex;
-			gap: 1rem;
-		  
-			.social-icon {
-				display: inline-flex;
-				align-items: center;
-				justify-content: center;
-				width: 36px;
-				height: 36px;
-				border-radius: 50%;
-				background: var(--mat-sys-surface-container);
-				color: var(--mat-sys-primary);
-				margin: 0 10px;
-				padding: 8px;
-				transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
-			
-				svg {
-					width: 28px;
-					height: 28px;
-					fill: var(--mat-sys-primary);
-					transition: fill 0.3s ease;
-				}
-			
-				&:hover {
-					background-color: var(--mat-sys-primary);
-					color: var(--mat-sys-on-primary);
-					transform: scale(1.05);
-					box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Adds a light shadow effect */
-				}
-			
-				&:hover svg {
-					fill: var(--mat-sys-on-primary); /* Changes icon color on hover */
-				}
-			}
+  
+		.social-icon {
+		  display: inline-flex;
+		  align-items: center;
+		  justify-content: center;
+		  width: 36px;
+		  height: 36px;
+		  border-radius: 50%;
+		  background: var(--mat-sys-surface-container);
+		  color: var(--mat-sys-primary);
+		  margin: 0 10px;
+		  padding: 8px;
+		  transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+  
+		  svg {
+			width: 28px;
+			height: 28px;
+			fill: var(--mat-sys-primary);
+			transition: fill 0.3s ease;
 		  }
-		  
+  
+		  &:hover {
+			background-color: var(--mat-sys-primary);
+			color: var(--mat-sys-on-primary);
+			transform: scale(1.05);
+			box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+		  }
+  
+		  &:hover svg {
+			fill: var(--mat-sys-on-primary);
+		  }
+  
+		  @media (max-width: 768px) {
+			width: 32px;
+			height: 32px;
+		  }
+		}
+	  }
 	}
   
 	.hero-image {
@@ -87,6 +110,10 @@
 		border-radius: 50%;
 		box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 	  }
+  
+	  @media (max-width: 768px) {
+		max-width: 300px;
+	  }
 	}
-}
+  }
   

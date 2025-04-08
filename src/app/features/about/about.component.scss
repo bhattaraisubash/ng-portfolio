@@ -105,6 +105,7 @@
 						display: flex;
 						align-items: center;
 						justify-content: flex-start;
+						flex-wrap: wrap;;
 						gap: 8px;
 						line-height: 1.5;
 
@@ -113,6 +114,11 @@
 							color: var(--mat-sys-primary);
 							display: inline-flex;
 							align-items: center;
+						}
+
+						@media (max-width: 768px) {
+							gap: 4px;
+							font-size: 0.8rem;
 						}
 					}
 			
@@ -137,10 +143,12 @@
 						line-height: 1.5;
 						font-size: .9rem;
 					}
+					
 
 					.skills-buttons {
 						display: flex;
 						gap: 10px;
+						flex-wrap: wrap;;
 	
 						button {
 							background-color: var(--mat-sys-primary);
@@ -170,12 +178,11 @@
 	}
 }
 
-/* Mobile Responsive */
 @media (max-width: 768px) {
 	.experience-container {
 		flex-direction: column;
 		padding: 40px 20px;
-		margin: 0 20px;
+		margin: 0 auto;
 		gap: 20px;
 
 		h2 {
@@ -187,7 +194,7 @@
 			max-width: 100%;
 			width: 100%;
 			margin-bottom: 20px;
-			padding: 30px;
+			padding: 10px;
 			display: flex;
 			justify-content: center;
 			align-items: center;

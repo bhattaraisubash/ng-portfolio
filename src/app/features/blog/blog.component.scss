@@ -11,7 +11,7 @@
 	@media (max-width: 768px) {
 		grid-template-columns: 1fr;
 		text-align: center;
-		margin: 0 20px;
+		margin: 0 auto;
 	}
 }
 
@@ -28,17 +28,25 @@
 	box-shadow: var(--mat-sys-elevation-2);
 
 	h2 {
-		font-size: 4em;
+		font-size: 4rem;
 		font-weight: 700;
 		margin-bottom: 10px;
 		letter-spacing: -1px;
+
+		@media (max-width: 768px) {
+			font-size: 2rem;
+		}
 	}
 
 	p {
-		font-size: 1.3em;
+		font-size: 1.3rem;
 		line-height: 1.6;
 		opacity: 0.9;
 		margin-bottom: 2rem;
+
+		@media (max-width: 768px) {
+			font-size: 1rem;
+		}
 	}
 
 	button {
@@ -57,6 +65,11 @@
 			color: var(--mat-sys-on-secondary);
 			transform: scale(1.05);
 		}
+
+		@media (max-width: 768px) {
+			font-size: 1rem;
+			padding: 0.8rem 1.5rem;
+		}
 	}
 }
   
@@ -66,7 +79,7 @@
 	gap: 1.5rem;
 
 	@media (max-width: 768px) {
-		grid-template-columns: 1fr; // Show one per row on mobile
+		grid-template-columns: 1fr;
 	}
 
 	.blog-item {
@@ -79,6 +92,7 @@
 		transition: box-shadow 0.3s ease, transform 0.3s ease;
 		cursor: pointer;
 		text-decoration: none;
+		padding-bottom: 1rem;
 
 		&:hover {
 			box-shadow: var(--mat-sys-elevation-4);
