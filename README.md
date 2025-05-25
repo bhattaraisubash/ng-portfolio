@@ -2,6 +2,10 @@
 
 Welcome to **ng-portfolio**, a modern and scalable portfolio template built with Angular and Angular Material. This template is designed to showcase your skills, projects, and expertise in a clean and professional manner. Whether you're a full-stack developer, JavaScript enthusiast, or passionate coder, ng-portfolio provides a dynamic solution to highlight your work.
 
+## 📸 Screenshot
+
+![NG Portfolio Screenshot](screenshot.png)
+
 ## ✨ Features
 
 - **Built with Angular & Angular Material**: Leverage Angular’s component-based architecture and Material Design’s pre-built UI components for a seamless experience.
