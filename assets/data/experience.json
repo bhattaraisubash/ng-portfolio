@@ -2,29 +2,29 @@
 	{
 	  "position": "Software Developer",
 	  "company": "Dollop Digital",
-	  "type": "Remote",
+	  "type": "Part Time",
 	  "location": "Queensland, Australia (Remote)",
-	  "duration": "2022 - 2023",
-	  "description": "Worked on 12+ WordPress plugins and themes, enhancing functionality and user satisfaction by 35%. Customized WooCommerce components to meet eCommerce needs, boosting client engagement by 20%. Designed Laravel and Spring Boot applications for backend processes, reducing server response times by 15%.",
-	  "skills": ["PHP", "WooCommerce", "Laravel", "Spring Boot", "WordPress"]
+	  "duration": "2024 - Present",
+	  "description": "Designed and developed Spring-Boot applications for backend processes, developed REST services for mobile clients, worked on 12+ WordPress plugins and themes, enhancing functionality and user satisfaction by 35%.",
+	  "skills": ["Java", "Spring Boot", "REST API", "WooCommerce", "WordPress"]
 	},
 	{
 	  "position": "Software Developer",
 	  "company": "Upwork",
 	  "type": "Freelance",
 	  "location": "Remote",
-	  "duration": "2021 - 2023",
+	  "duration": "2022 - 2023",
 	  "description": "Completed 15+ projects for international clients, start-ups, and SMEs across diverse industries with a 100% satisfaction rate. Developed Java-based Spring Boot RESTful APIs and microservices, cutting application response times by 25%. Delivered 5+ payment plugins, streamlining transactions for applications serving over 30,000 users. Provided personalized Java programming and Spring Framework tutoring, helping clients upskill and improve their technical proficiency.",
-	  "skills": ["PHP", "Laravel", "Spring Boot", "Microservices", "Java", "Payment Plugins"]
+	  "skills": ["Java", "Spring Boot", "Tutoring", "Payment Plugins"]
 	},
 	{
-	  "position": "Associate Software Developer",
+	  "position": "Software Developer",
 	  "company": "Green Hub",
 	  "type": "Full Time",
 	  "location": "Kathmandu, Nepal (Hybrid)",
 	  "duration": "2020 - 2023",
 	  "description": "Developed full-stack web applications using Java and Spring Boot, reducing response times by 28%. Collaborated in an Agile team of 7 developers, optimizing real-time data processing with Apache Kafka to enhance mission-critical operations. Established CI/CD pipelines using Jenkins, Docker, and Kubernetes, accelerating deployments by 30%.",
-	  "skills": ["Java", "Spring Boot", "Apache Kafka", "CI/CD", "Jenkins", "Docker", "Kubernetes"]
+	  "skills": ["Java", "Spring Boot", "Hibernate", "REST API", "Jenkins", "Docker", "Apache Kafka"]
 	}
 ]
   
