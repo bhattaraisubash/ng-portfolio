@@ -4,27 +4,27 @@
 	  "company": "Dollop Digital",
 	  "type": "Part Time",
 	  "location": "Queensland, Australia (Remote)",
-	  "duration": "2024 - Present",
-	  "description": "Designed and developed Spring-Boot applications for backend processes, developed REST services for mobile clients, worked on 12+ WordPress plugins and themes, enhancing functionality and user satisfaction by 35%.",
-	  "skills": ["Java", "Spring Boot", "REST API", "WooCommerce", "WordPress"]
-	},
-	{
-	  "position": "Software Developer",
-	  "company": "Upwork",
-	  "type": "Freelance",
-	  "location": "Remote",
-	  "duration": "2022 - 2023",
-	  "description": "Completed 15+ projects for international clients, start-ups, and SMEs across diverse industries with a 100% satisfaction rate. Developed Java-based Spring Boot RESTful APIs and microservices, cutting application response times by 25%. Delivered 5+ payment plugins, streamlining transactions for applications serving over 30,000 users. Provided personalized Java programming and Spring Framework tutoring, helping clients upskill and improve their technical proficiency.",
-	  "skills": ["Java", "Spring Boot", "Tutoring", "Payment Plugins"]
+	  "duration": "2024 Sep - Present",
+	  "description": "Refactored and modernized legacy Java codebases, transitioning applications from Java 8 to Java 17 to enhance performance, maintainability, and security. Collaborated on backend services using Spring Boot, Spring Data JPA, and RESTful APIs to improve system scalability and reliability. Participated in peer code reviews and implemented unit tests using JUnit 5, ensuring stable releases and high test coverage in an Agile remote development environment.",
+	  "skills": ["Java", "Spring Boot", "REST API", "JUnit", "Code Reviews"]
 	},
 	{
 	  "position": "Software Developer",
 	  "company": "Green Hub",
 	  "type": "Full Time",
 	  "location": "Kathmandu, Nepal (Hybrid)",
-	  "duration": "2020 - 2023",
-	  "description": "Developed full-stack web applications using Java and Spring Boot, reducing response times by 28%. Collaborated in an Agile team of 7 developers, optimizing real-time data processing with Apache Kafka to enhance mission-critical operations. Established CI/CD pipelines using Jenkins, Docker, and Kubernetes, accelerating deployments by 30%.",
-	  "skills": ["Java", "Spring Boot", "Hibernate", "REST API", "Jenkins", "Docker", "Apache Kafka"]
+	  "duration": "2021 - 2023",
+	  "description": "Worked in a Java backend team using Java 8/11, Spring Boot, Hibernate, and MySQL. Designed secure, efficient RESTful APIs and applied key design patterns such as Strategy, Builder, and Observer to support modular, event-driven features. Integrated DTOs, input validation, and centralized exception handling using Spring’s @ControllerAdvice. Achieved over 85% test coverage on critical modules and automated CI/CD pipelines using Maven, Jenkins, GitHub Actions, and AWS (EC2, S3), cutting manual release time by 30%.",
+	  "skills": ["Java", "Spring Boot", "Hibernate", "REST API", "JUnit", "Maven", "GitHub Actions", "AWS"]
+	},
+	{
+	  "position": "Freelance Software Developer",
+	  "company": "Upwork",
+	  "type": "Part Time",
+	  "location": "Freelance",
+	  "duration": "2022 - 2023",
+	  "description": "Completed 20+ custom software projects for international clients, start-ups, and SMEs across diverse industries with a 100% satisfaction rate. Designed and delivered Java-based RESTful APIs, reducing response times by up to 25%. Developed 5+ payment integration plugins to streamline online transactions for platforms with over 30,000 users. Provided personalized tutoring on Java programming and the Spring Framework, enabling clients to deepen technical skills and enhance project delivery capabilities.",
+	  "skills": ["Java", "Spring Boot", "Hibernate", "REST API", "Tutoring", "Payment Integration"]
 	}
 ]
   
